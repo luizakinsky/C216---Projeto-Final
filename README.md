@@ -1,6 +1,11 @@
 # C216-Projeto Final
 # Gestão de Álbuns Musicais
 
+## Integrantes
+- **Nome Completo:** Luiza Kinsky Mendes
+- **Matrícula:** 32
+- **E-mail:** luizamendes@ges.inatel.br
+
 ## Descrição do Projeto
 Este projeto foi desenvolvido como parte do curso de engenharia de software no INATEL. O sistema permite a gestão de álbuns musicais, incluindo operações como adicionar, listar, atualizar e remover álbuns musicais, além de registrar vendas.
 
@@ -19,11 +24,6 @@ Para rodar o projeto, você precisará ter o Docker e o Docker Compose instalado
 
 Esse comando vai construir os contêineres necessários para o backend, frontend e banco de dados, e vai iniciar todos eles. Após a execução do comando, a API estará disponível em Backend: `http://localhost:8000/`
 Frontend: `http://127.0.0.1:3000/`
-
-## Integrantes
-- **Nome Completo:** Luiza Kinsky Mendes
-- **Matrícula:** 32
-- **E-mail:** luizamendes@ges.inatel.br
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
