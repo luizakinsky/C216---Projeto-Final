@@ -1,0 +1,330 @@
+{
+	"id": "50dd2f79-f00b-4595-9461-86ce652ef390",
+	"name": "C216-L1-PROJETO_FINAL-LuizaKinskyMendes_32",
+	"timestamp": "2024-12-05T19:28:02.562Z",
+	"collection_id": "38473284-1382385c-467c-4552-accd-e8f2e2c58ac5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 18,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-05T19:28:01.756Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e55753a8-c7fc-433f-95fb-de190333fcd7",
+			"name": "Remover Todos os Albuns",
+			"url": "http://localhost:8000/api/v1/albuns/",
+			"time": 146,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should confirm deletion": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should confirm deletion": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				146
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should confirm deletion": true
+				}
+			]
+		},
+		{
+			"id": "8879aa65-ce9c-4b82-abed-6c2dd8d90a88",
+			"name": "Listar todos os Albuns",
+			"url": "http://localhost:8000/api/v1/albuns/",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should be a list": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should be a list": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should be a list": true
+				}
+			]
+		},
+		{
+			"id": "d295d268-7bf1-4601-89f5-830591856210",
+			"name": "Buscar Album por ID",
+			"url": "http://localhost:8000/api/v1/albuns/1",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should contain album details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should contain album details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should contain album details": true
+				}
+			]
+		},
+		{
+			"id": "49441f25-4156-4ee5-a6c8-bc2723d9a503",
+			"name": "Adicionar um Album",
+			"url": "http://localhost:8000/api/v1/albuns/",
+			"time": 34,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response should contain confirmation message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should contain confirmation message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response should contain confirmation message": true
+				}
+			]
+		},
+		{
+			"id": "64459535-5d0a-4d42-a97e-36fc4c319f52",
+			"name": "Vender um Album",
+			"url": "http://localhost:8000/api/v1/albuns/1/vender/",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should confirm sale": true,
+				"Quantidade do album foi atualizada": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should confirm sale": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Quantidade do album foi atualizada": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should confirm sale": true,
+					"Quantidade do album foi atualizada": true
+				}
+			]
+		},
+		{
+			"id": "6b5558b2-329a-4141-8cbc-9e127371ce64",
+			"name": "Listar todas as vendas",
+			"url": "http://localhost:8000/api/v1/vendas/",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should confirm sales details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should confirm sales details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should confirm sales details": true
+				}
+			]
+		},
+		{
+			"id": "c47caf6c-583e-4c11-a3a2-ac2b27cf7836",
+			"name": "Atualizar Atributos de um Album",
+			"url": "http://localhost:8000/api/v1/albuns/3",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should confirm update": true,
+				"Os atributos do album foram atualizados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should confirm update": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Os atributos do album foram atualizados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should confirm update": true,
+					"Os atributos do album foram atualizados": true
+				}
+			]
+		},
+		{
+			"id": "b1194e95-4955-4ecf-80f5-6252c0996482",
+			"name": "Remover um Album",
+			"url": "http://localhost:8000/api/v1/albuns/1",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should confirm deletion": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should confirm deletion": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should confirm deletion": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 379,
+	"collection": {
+		"requests": [
+			{
+				"id": "e55753a8-c7fc-433f-95fb-de190333fcd7",
+				"method": "DELETE"
+			},
+			{
+				"id": "8879aa65-ce9c-4b82-abed-6c2dd8d90a88",
+				"method": "GET"
+			},
+			{
+				"id": "d295d268-7bf1-4601-89f5-830591856210",
+				"method": "GET"
+			},
+			{
+				"id": "49441f25-4156-4ee5-a6c8-bc2723d9a503",
+				"method": "POST"
+			},
+			{
+				"id": "64459535-5d0a-4d42-a97e-36fc4c319f52",
+				"method": "PUT"
+			},
+			{
+				"id": "6b5558b2-329a-4141-8cbc-9e127371ce64",
+				"method": "GET"
+			},
+			{
+				"id": "c47caf6c-583e-4c11-a3a2-ac2b27cf7836",
+				"method": "PATCH"
+			},
+			{
+				"id": "b1194e95-4955-4ecf-80f5-6252c0996482",
+				"method": "DELETE"
+			}
+		]
+	}
+}
